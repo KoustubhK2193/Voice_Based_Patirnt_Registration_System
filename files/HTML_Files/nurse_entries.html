@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Dialy Checkup Form </title>
+  <link rel="stylesheet" href="/CSS_Files/nurse_entries.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Patient Daily Checkup</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="nurse">
+            <div class="input-box">
+              <span class="details">Patient Id</span>
+              <input type="text" name="patient_id" id="patient_id" placeholder="Enter Patient Id" required>
+            </div>
+            <img id="mic1" onclick="solution2()" class="nursemic" src="/Image_Files/mic (1).svg" />
+            <div class="input-box">
+              <span class="details">Checkup Time</span>
+              <input type="text" name="checkup_time" id="checkup_time" placeholder="Time" required>
+            </div>
+            <img id="mic2" onclick="solution1()" class="nursemic" src="/Image_Files/mic (1).svg" />
+          </div>
+
+
+          <div class="nurse">
+            <div class="input-box">
+              <span class="details">Blood Pressure</span>
+              <input type="text" name="patient_bp" id="patient_bp" placeholder="Patient's Blood Pressure" required>
+            </div>
+            <img id="mic3" class="nursemic" onclick="solution3()" src="/Image_Files/mic (1).svg" />
+
+            <div class="input-box">
+              <span class="details">Temperature</span>
+              <input type="text" name="patient_temp" id="patient_temp" placeholder="Patient's Temperature" required>
+            </div>
+            <img id="mic4" class="nursemic" onclick="solution4()" src="/Image_Files/mic (1).svg" />
+          </div>
+          <div class="nurse">
+            <div class="input-box">
+              <span class="details">Description</span>
+              <input type="text" name="patient_desc" id="patient_desc" placeholder="Any Other Description" required>
+            </div>
+            <img id="mic5" class="nursemic" onclick="solution5()" src="/Image_Files/mic (1).svg" />
+
+            <div class="input-box" style="visibility:hidden">
+              <span class="details">Description</span>
+              <input type="text" placeholder="Any Other Description" required>
+            </div>
+            <img id="mic6" style="visibility:hidden" class="nursemic" onclick="solution11()"
+              src="/Image_Files/mic (1).svg" />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Update">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/JS_Files/index.js"></script>
+
+</body>
+
+</html>

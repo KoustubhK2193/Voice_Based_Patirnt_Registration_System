@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Based Patient Registration System</title>
+  <link rel="stylesheet" href="/CSS_Files/style.css" />
+</head>
+
+<body>
+  <!-- Registration Form Section -->
+  <div class="box">
+    <form action="/" method="post" id="registrationform">
+      <div class="box1" id="c1">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes">
+            <input type="text" name="fname" id="fname" placeholder="Patient First Name" />
+          </div>
+          <img id="mic1" class="micclass" onclick="solution11()" src="/Image_Files/mic (1).svg" />
+          <!-- <div id="root" class="rootdiv">Root</div> -->
+
+          <div class="inputBoxes">
+            <input type="text" name="lname" id="lname" placeholder="Patient Last Name" />
+          </div>
+          <img id="mic2" onclick="solution12()" src="/Image_Files/mic (1).svg" />
+        </div>
+        <div class="btn">
+          <a class="nextButton" onclick="c2_to_text()" href="#c2">Continue</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c2">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes">
+            <input type="text" name="age" id="age" placeholder="Age" />
+          </div>
+          <img id="mic3" onclick="solution22()" src="/Image_Files/mic (1).svg" />
+          <div class="inputBoxes">
+            <input type="text" name="gender" id="gender" placeholder="Gender" required />
+          </div>
+          <img id="mic4" onclick="solution31()" src="/Image_Files/mic (1).svg" />
+        </div>
+        <div class="btn">
+          <a class="nextButton" onclick="c3_to_text()" href="#c3">Continue</a>
+          <a class="previousButton" onclick="c1_to_text()" href="#c1">Previous</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c3">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes">
+            <input type="text" name="bloodgroup" id="bloodgroup" placeholder="Blood Group" />
+          </div>
+          <img id="mic5" onclick="solution41()" src="/Image_Files/mic (1).svg" />
+        </div>
+
+        <div class="btn">
+          <a class="nextButton" onclick="c4_to_text()" href="#c4">Continue</a>
+          <a class="previousButton" onclick="c2_to_text()" href="#c2">Previous</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c4">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes">
+            <input type="text" name="phoneno1" id="phoneno1" placeholder="Phone No" required />
+          </div>
+          <img id="mic6" onclick="solution61()" src="/Image_Files/mic (1).svg" />
+          <div class="inputBoxes">
+            <input type="text" name="phoneno2" id="phoneno2" placeholder="Phone No" />
+          </div>
+          <img id="mic7" onclick="solution62()" src="/Image_Files/mic (1).svg" />
+        </div>
+        <div class="btn">
+          <a class="nextButton" onclick="c5_to_text()" href="#c5">Continue</a>
+          <a class="previousButton" onclick="c3_to_text()" href="#c3">Previous</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c5">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes">
+            <input type="text" name="address1" id="address1" placeholder="Address" />
+          </div>
+          <img id="mic8" onclick="solution81()" src="/Image_Files/mic (1).svg" />
+        </div>
+        <div class="btn">
+          <a class="nextButton" onclick="c6_to_text()" href="#c6">Continue</a>
+          <a class="previousButton" onclick="c4_to_text()" href="#c4">Previous</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c6">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes" id="emergency_cause">
+            <input type="text" name="reason" id="reason_for_emergency" placeholder="Cause of Emergency" required />
+          </div>
+          <img id="emergency_cause_mic" onclick="solution91()" src="/Image_Files/mic (1).svg" />
+         
+        </div>
+        <div class="btn">
+          <a class="nextButton" onclick="c7_to_text()" href="#c7">Continue</a>
+          <a class="previousButton" onclick="c5_to_text()" href="#c5">Previous</a>
+        </div>
+      </div>
+
+      <div class="box1" id="c7">
+        <h1 class="formHeading">Voice Based Registration Form</h1>
+        <div class="container">
+          <div class="inputBoxes" id="history">
+            <input type="text" name="Medical_History" id="medical_history" placeholder="Medical History if any"
+              required />
+          </div>
+          <img id="medical_history_mic" onclick="solution92()" src="/Image_Files/mic (1).svg" />
+        </div>
+        <div class="formbutton">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- Footer Section -->
+    <footer>
+      <h3>Copyright Ⓒ Project Development G8 2023 | All Rights Reserved</h3>
+    </footer>
+  </div>
+  <script src="/JS_Files/index.js"></script>
+  <script src="/JS_Files/background_voice.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

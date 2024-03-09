@@ -1,0 +1,139 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mukta&family=Roboto+Condensed&display=swap');
+body{
+    background-image: url("/images/background.jpg");
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.navbar li
+{
+    font-size: 24px;
+    padding:3px 10px;
+}
+.navbar li a
+{
+    color: rgb(14 14 15);
+    font-weight: bolder;  
+    text-decoration: none;  
+}
+
+.navbar li:hover
+{
+    transform: scale(1.15);
+}
+
+.navbar li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: rgb(23, 27, 34);
+    text-decoration-thickness: 3px;
+}
+
+.container0{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_para{
+    color: black;
+    margin-top: 100px;
+    font-size: large;
+}
+#heading_about{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container1{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box1{
+    height: 40vh;
+    width: 20vw;
+    border: 3px solid teal;
+    box-shadow: 5px 5px 20px black;
+    padding: 15px;
+    /* display: flex; */
+    /* justify-items: center; */
+}
+
+.box1:hover{
+    transform: scale(1.2);
+}
+
+.icon1{
+    position: relative;
+    left: 120px;
+}
+
+.numbers{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.heading1{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+.box2{
+    height: 50vh;
+    width: 25vw;
+    border: 3px solid teal;
+    box-shadow: 5px 5px 20px black;
+    padding: 15px;
+}
+
+.box2:hover{
+    transform: scale(1.2);
+}
+
+.icon2{
+    position: relative;
+    left: 150px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+/* Footer Section */
+footer {
+    width: 100%;
+    padding: 5px;
+
+    padding-top: 50px;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width:580px) {
+    footer {
+        width: 390px;
+    }
+}

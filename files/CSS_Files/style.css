@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mukta&family=Roboto+Condensed&display=swap');
+
+body {
+    background-color: rgb(178, 242, 242);
+    background: url("/Image_Files/background.jpg") no-repeat;
+    background: url("/Image_Files/home-img.svg") no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Navigation Bar Section */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar li {
+    font-size: 24px;
+    padding: 3px 10px;
+}
+
+.navbar li a {
+    color: rgb(14 14 15);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    transform: scale(1.15);
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(23, 27, 34);
+    text-decoration-thickness: 3px;
+}
+
+/* Headings Section */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 70px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Home Page Section */
+.indexheading {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-family: serif;
+}
+
+.indextext {
+    font-size: 25px;
+    text-align: center;
+    margin: 5px auto;
+    font-family: cursive;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+#homepage {
+    height: 65vh;
+}
+
+/* Workplace Patient Doctor_Staff Section */
+.workplaceheading {
+    margin: 35px auto;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    color: black;
+    width: 260px;
+    height: 200px;
+    border: 1px solid rgb(24, 21, 37);
+    border-radius: 20px;
+    margin: 35px 100px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 10px 10px 30px rgb(9, 25, 61);
+}
+
+.boxes:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(11, 10, 10);
+}
+
+.b1 {
+    background: url("/Image_Files/emergency_section.png") no-repeat center center/cover;
+}
+
+.b2 {
+    background: url("/Image_Files/general_section.png") no-repeat center center/cover;
+}
+
+.b3 {
+    background: url("/Image_Files/nurse_section.jpg") no-repeat center center/cover;
+}
+
+.b4 {
+    background: url("/Image_Files/doctor_section.jpg") no-repeat center center/cover;
+}
+
+.b5 {
+    background: url("/Image_Files/patient_section.png") no-repeat center center/cover;
+}
+
+.b6 {
+    background: url("/Image_Files/doctor_staff_section.png") no-repeat center center/cover;
+}
+
+/* Contact Us Section */
+.title {
+    margin: 30px;
+}
+
+#contact .container {
+    width: 400px;
+    margin: auto;
+}
+
+.contactBoxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactBoxes div {
+    background-color: white;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+    margin: 15px;
+}
+
+input {
+
+    width: 300px;
+    height: 40px;
+    padding: 3px;
+    font-size: 18px;
+    border: none;
+}
+
+.contactMic {
+    width: 45px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding-top: 13px;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+
+/* Emergency Regular Form Section */
+
+#registrationform {
+    margin: auto;
+}
+
+.formHeading
+{
+    margin: 50px auto;
+    position: relative;
+    top: -20px;
+}
+.box1 {
+    background-color: rgb(178, 242, 242);
+    background: url("/Image_Files/background.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9
+{
+    visibility: hidden;
+}
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBoxes {
+    background-color: white;
+    border: 2px solid rgb(40, 40, 91);
+    border-radius: 3px;
+    margin: 5px;
+    width: 400px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 385px;
+    height: 40px;
+    padding: 3px;
+    margin: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+
+}
+
+img {
+    width: 45px;
+    margin: 5px auto;
+    cursor: pointer;
+    padding-top: 13px;
+    position: relative;
+    bottom: 78px;
+    left: 250px;
+}
+
+img :hover {
+    transform: scale(1.3);
+}
+
+#animation {
+    height: 500px;
+}
+
+/* Buttons Section*/
+.btn {
+    text-align: center;
+    margin: 10px;
+}
+
+.nextButton {
+    background-color: rgba(101, 216, 203, 0.1);
+    color: rgb(36, 60, 62);
+    width: 125px;
+    padding: 10px;
+    margin: 0px;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2.5px solid rgb(40, 40, 91);
+    border-radius: 5px;
+    font-family: serif;
+    position: relative;
+    right: 20px;
+}
+
+.nextButton:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+.previousButton {
+    background-color: rgba(101, 216, 203, 0.1);
+    color: rgb(36, 60, 62);
+    width: 125px;
+    padding: 10px;
+    margin: 0px;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2.5px solid rgb(40, 40, 91);
+    border-radius: 5px;
+    font-family: serif;
+    position: relative;
+    left: 20px;
+}
+
+.previousButton:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+Button {
+    background-color: rgb(32, 70, 219);
+    color: white;
+    width: 180px;
+    padding: 10px;
+    margin: 10px 12px;
+    text-align: center;
+    font-size: 23px;
+    border: 1px solid rgb(40, 40, 91);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formbutton {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.allmic
+{
+    animation:blink 1s infinite;
+}
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#mic1:hover {
+    transform: scale(1.35);
+}
+
+#mic2:hover {
+    transform: scale(1.35);
+}
+
+#mic3:hover {
+    transform: scale(1.35);
+}
+
+#mic4:hover {
+    transform: scale(1.35);
+}
+
+#mic5:hover {
+    transform: scale(1.35);
+}
+
+#mic6:hover {
+    transform: scale(1.35);
+}
+
+#mic7:hover {
+    transform: scale(1.35);
+}
+
+#mic8:hover {
+    transform: scale(1.35);
+}
+
+#mic9:hover {
+    transform: scale(1.35);
+}
+
+#emergency_cause_mic:hover {
+    transform: scale(1.35);
+}
+
+#medical_history_mic:hover{
+    transform: scale(1.35);
+}
+
+#Registree_mic:hover {
+    transform: scale(1.35);
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Footer Section */
+footer {
+    width: 100%;
+    padding: 5px;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* Website Responsiveness */
+@media (max-width:870px) {
+    .homeleftimg {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media (max-width:720px) {
+    .homeleftimg {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media (max-width:580px) {
+    footer {
+        width: 390px;
+    }
+}
+
+/* .rootdiv
+{
+    background-color: red;
+} */
